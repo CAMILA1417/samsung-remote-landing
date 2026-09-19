@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad | Lunar Remote — Zenlab Digital</title>
-  <meta name="description" content="Política de Privacidad y Declaración de Data Safety de Lunar Remote (Samsung Family Remote) desarrollada por Zenlab Digital.">
+  <title>Política de Privacidad y Términos | Remote Family — Zenlab Digital</title>
+  <meta name="description" content="Política de Privacidad, Declaración de Data Safety y Términos de Servicio de la aplicación Remote Family desarrollada por Zenlab Digital.">
+  <meta name="author" content="Zenlab Digital">
+
+  <!-- Favicon / App Icon -->
+  <link rel="icon" type="image/svg+xml" href="icono-app.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,14 +19,16 @@
       --bg-card: rgba(18, 24, 38, 0.75);
       --bg-card-hover: rgba(28, 36, 56, 0.85);
       --border-glass: rgba(255, 255, 255, 0.08);
-      --border-accent: rgba(99, 102, 241, 0.3);
+      --border-glass-strong: rgba(255, 255, 255, 0.15);
+      --border-accent: rgba(99, 102, 241, 0.35);
       --accent-primary: #6366F1;
       --accent-secondary: #06B6D4;
-      --accent-glow: rgba(99, 102, 241, 0.15);
+      --accent-glow: rgba(99, 102, 241, 0.2);
       --text-main: #F8FAFC;
       --text-muted: #94A3B8;
       --text-dim: #64748B;
       --success: #10B981;
+      --warning: #F59E0B;
       --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
@@ -47,7 +54,7 @@
 
     header {
       border-bottom: 1px solid var(--border-glass);
-      background: rgba(8, 11, 20, 0.8);
+      background: rgba(8, 11, 20, 0.85);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       position: sticky;
@@ -58,7 +65,7 @@
     .nav-container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 1.25rem 1.5rem;
+      padding: 1rem 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -75,45 +82,71 @@
       letter-spacing: -0.02em;
     }
 
-    .brand-badge {
+    .brand-icon {
       width: 34px;
       height: 34px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius: 9px;
+      object-fit: cover;
       box-shadow: 0 0 15px var(--accent-glow);
     }
 
-    .brand-badge svg {
-      width: 20px;
-      height: 20px;
-      fill: #ffffff;
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
 
-    .nav-tag {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.35rem 0.75rem;
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.15rem;
       border-radius: 9999px;
-      background: rgba(16, 185, 129, 0.12);
-      color: var(--success);
-      border: 1px solid rgba(16, 185, 129, 0.25);
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid var(--border-accent);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .btn-back:hover {
+      background: var(--accent-primary);
+      box-shadow: 0 0 20px var(--accent-glow);
+      transform: translateX(-3px);
     }
 
     main {
       flex: 1;
       max-width: 900px;
       margin: 0 auto;
-      padding: 3rem 1.5rem 5rem;
+      padding: 2.5rem 1.5rem 5rem;
       width: 100%;
     }
 
+    .breadcrumb-nav {
+      margin-bottom: 2rem;
+    }
+
+    .breadcrumb-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .breadcrumb-link:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
     .policy-hero {
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       text-align: left;
     }
 
@@ -145,8 +178,8 @@
     .meta-pill {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--border-glass);
-      padding: 0.25rem 0.75rem;
-      border-radius: 6px;
+      padding: 0.3rem 0.85rem;
+      border-radius: 8px;
     }
 
     .meta-pill strong {
@@ -154,7 +187,7 @@
     }
 
     .highlight-card {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(6, 182, 212, 0.05));
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(6, 182, 212, 0.06));
       border: 1px solid var(--border-accent);
       border-radius: 16px;
       padding: 1.75rem;
@@ -183,7 +216,7 @@
       margin-bottom: 2rem;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      transition: border-color 0.2s ease, transform 0.2s ease;
+      transition: border-color 0.2s ease;
     }
 
     .section-card:hover {
@@ -191,7 +224,7 @@
     }
 
     .section-card h2 {
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 700;
       margin-bottom: 1rem;
       color: #FFFFFF;
@@ -204,37 +237,11 @@
     .section-card p {
       color: var(--text-muted);
       margin-bottom: 1rem;
-      font-size: 1rem;
+      font-size: 0.98rem;
     }
 
     .section-card p:last-child {
       margin-bottom: 0;
-    }
-
-    .permission-item {
-      background: rgba(0, 0, 0, 0.25);
-      border: 1px solid var(--border-glass);
-      border-radius: 12px;
-      padding: 1.25rem;
-      margin-top: 1rem;
-    }
-
-    .permission-name {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--accent-secondary);
-      margin-bottom: 0.4rem;
-      display: inline-block;
-      background: rgba(6, 182, 212, 0.1);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-    }
-
-    .permission-desc {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.6;
     }
 
     ul {
@@ -248,14 +255,62 @@
       padding-left: 1.5rem;
       margin-bottom: 0.75rem;
       color: var(--text-muted);
+      font-size: 0.98rem;
     }
 
     ul li::before {
       content: "•";
       position: absolute;
       left: 0.5rem;
-      color: var(--accent-primary);
+      color: var(--accent-secondary);
       font-weight: bold;
+    }
+
+    .notice-box {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .notice-box p {
+      color: #FDE68A;
+      font-size: 0.92rem;
+      margin-bottom: 0;
+    }
+
+    .contact-link {
+      color: var(--accent-secondary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .contact-link:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    .bottom-return-banner {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 2.5rem;
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+      border: 1px solid var(--border-glass-strong);
+      border-radius: 20px;
+    }
+
+    .bottom-return-banner h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .bottom-return-banner p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
     }
 
     footer {
@@ -273,169 +328,148 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
-    }
-
-    .contact-link {
-      color: var(--accent-secondary);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    .contact-link:hover {
-      color: #FFFFFF;
-      text-decoration: underline;
+      gap: 0.75rem;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation Header with Return View Link -->
   <header>
     <div class="nav-container">
-      <a href="index.html" class="brand">
-        <div class="brand-badge">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
-          </svg>
-        </div>
-        <span>Lunar Remote</span>
+      <a href="index.html" class="brand" aria-label="Remote Family Inicio">
+        <img src="icono-app.svg" alt="Remote Family Icon" class="brand-icon">
+        <span>Remote Family</span>
       </a>
-      <span class="nav-tag">Google Play Data Safety</span>
+      
+      <div class="nav-actions">
+        <a href="index.html" class="btn-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+          </svg>
+          Volver al Inicio
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
+    <!-- Breadcrumb return -->
+    <div class="breadcrumb-nav">
+      <a href="index.html" class="breadcrumb-link">
+        ← Volver a la página principal
+      </a>
+    </div>
+
     <div class="policy-hero">
-      <h1 class="policy-title">Política de Privacidad</h1>
-      <p class="policy-subtitle">Declaración oficial de protección de privacidad y transparencia técnica de Lunar Remote (Samsung Family Remote).</p>
+      <h1 class="policy-title">Política de Privacidad y Términos</h1>
+      <p class="policy-subtitle">Declaración de protección de datos, funcionamiento local y términos de uso de Remote Family.</p>
       <div class="meta-pills">
+        <div class="meta-pill"><strong>Aplicación:</strong> Remote Family</div>
         <div class="meta-pill"><strong>Desarrollador:</strong> Zenlab Digital</div>
-        <div class="meta-pill"><strong>Fecha de Vigencia:</strong> Septiembre 2026</div>
-        <div class="meta-pill"><strong>Última Actualización:</strong> 18 de Septiembre de 2026</div>
+        <div class="meta-pill"><strong>Contacto:</strong> info@zenlabdigital.com</div>
+        <div class="meta-pill"><strong>Última Actualización:</strong> Septiembre 2026</div>
       </div>
     </div>
 
     <!-- Highlight de Cero Recolección PII -->
-    <div class="highlight-card">
+    <div class="highlight-card" id="seguridad">
       <div class="highlight-header">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
           <path d="m9 12 2 2 4-4"></path>
         </svg>
-        <h3>Cero Recolección de Datos Personales (0 PII)</h3>
+        <h3>Tu Privacidad es Nuestra Prioridad</h3>
       </div>
       <p style="color: #E2E8F0; font-size: 1rem; margin-bottom: 0.5rem;">
-        <strong>Lunar Remote</strong> no recopila, no recolecta, no almacena ni transmite ningún tipo de información personal, datos personales identificables (PII - <em>Personally Identifiable Information</em>) ni datos de uso.
+        <strong>Remote Family</strong> no recopila, no registra, no almacena ni comparte ningún tipo de información personal, identificadores de usuario ni datos de navegación.
       </p>
       <p style="color: var(--text-muted); font-size: 0.95rem;">
-        Toda la comunicación de control remoto ocurre estrictamente dentro de la red local Wi-Fi de su hogar (LAN) directamente entre su teléfono y el televisor. No existen servidores externos, bases de datos en la nube (cloud), ni SDKs de terceros para rastreo (tracking), analíticas o publicidad (ads).
+        Todo el funcionamiento de control remoto ocurre de forma directa y exclusiva dentro de la red Wi-Fi local de tu hogar entre tu teléfono móvil y tu Smart TV. No existen servidores externos que monitoreen tus hábitos de entretenimiento ni publicidad invasiva.
       </p>
     </div>
 
-    <!-- Sección 1: Introducción y Alcance -->
+    <!-- Sección 1: Alcance del Servicio -->
     <section class="section-card">
-      <h2>1. Introducción y Alcance</h2>
+      <h2>1. Alcance y Uso de la Aplicación</h2>
       <p>
-        Esta Política de Privacidad describe cómo <strong>Zenlab Digital</strong> trata la información de los usuarios al utilizar la aplicación móvil <strong>Lunar Remote</strong> (también denominada <em>Samsung Family Remote</em>).
+        Esta Política de Privacidad y Términos rige el uso de la aplicación móvil <strong>Remote Family</strong>, desarrollada y operada por <strong>Zenlab Digital</strong>.
       </p>
       <p>
-        Diseñamos Lunar Remote bajo los principios de <em>Privacy by Design</em> y máxima soberanía del usuario: una herramienta puramente local que convierte su dispositivo móvil en un control remoto ergonómico y ultrarrápido para Smart TVs Samsung conectadas a la misma red doméstica.
+        Remote Family fue creada para brindar una experiencia de control remoto intuitiva, rápida y ergonómica para televisores Smart TV conectados a la misma red doméstica del usuario.
       </p>
     </section>
 
-    <!-- Sección 2: Datos y Almacenamiento Local -->
+    <!-- Sección 2: Datos y Permisos de Red -->
     <section class="section-card">
-      <h2>2. Datos y Almacenamiento Local</h2>
+      <h2>2. Tratamiento de Datos y Permisos Locales</h2>
       <p>
-        Lunar Remote opera 100% de manera autónoma en su dispositivo:
+        La aplicación está diseñada bajo el principio de total aislamiento en red local:
       </p>
       <ul>
-        <li><strong>Cero PII:</strong> No se solicitan nombres, correos electrónicos, cuentas de usuario, números de teléfono, ubicación geográfica ni identificadores publicitarios.</li>
-        <li><strong>Tokens de Emparejamiento:</strong> Al autorizar la aplicación en la pantalla física del Smart TV, el televisor emite un token criptográfico de sesión. Dicho token se almacena de forma exclusiva en el almacenamiento privado y cifrado de su dispositivo (SharedPreferences local) para evitar tener que solicitar confirmación en el televisor en usos posteriores.</li>
-        <li><strong>Sin Sincronización en la Nube:</strong> Este token nunca sale de su dispositivo ni se transmite a servidores de Zenlab Digital ni de terceros.</li>
+        <li><strong>Cero Datos Personales:</strong> No se solicitan nombres, correos, cuentas, ubicaciones geográficas ni números telefónicos.</li>
+        <li><strong>Permiso de Red Wi-Fi Local:</strong> La app requiere acceso a la red local únicamente para descubrir y comunicarse directamente con el televisor inteligente que el usuario autorice.</li>
+        <li><strong>Tokens de Sesión Locales:</strong> Si el televisor solicita autorización, el identificador de conexión se guarda únicamente en la memoria local de tu propio celular. Nunca se transmite fuera de tu dispositivo.</li>
       </ul>
     </section>
 
-    <!-- Sección 3: Justificación Técnica de Permisos de Android -->
+    <!-- Sección 3: Servicios de Terceros y Marcas -->
     <section class="section-card">
-      <h2>3. Justificación Técnica de Permisos de Android</h2>
+      <h2>3. Accesos a Streaming y Marcas Registradas</h2>
       <p>
-        Para operar dentro de la red local, la aplicación solicita exclusivamente los siguientes permisos del sistema operativo Android, declarados de forma estricta en el archivo <code>AndroidManifest.xml</code>:
+        Remote Family incluye botones de acceso directo para abrir aplicaciones como YouTube, Netflix, Disney+ y Spotify en tu Smart TV:
       </p>
+      <ul>
+        <li>Remote Family <strong>no</strong> accede a tus cuentas, contraseñas, métodos de pago ni historial de reproducción en dichas plataformas.</li>
+        <li>Todas las marcas comerciales, nombres de productos y logotipos pertenecen a sus respectivos dueños. Su mención es meramente referencial para indicar compatibilidad de control.</li>
+      </ul>
+    </section>
 
-      <div class="permission-item">
-        <span class="permission-name">android.permission.INTERNET</span>
-        <p class="permission-desc">
-          <strong>Propósito técnico:</strong> Permite establecer la conexión directa por socket TCP / WebSocket (puerto 8001 para <code>ws://</code> y puerto 8002 para <code>wss://</code>) con la API SmartView nativa del televisor Samsung dentro de la red local (LAN). La aplicación <em>no</em> utiliza este permiso para acceder a Internet público ni para comunicarse con servidores externos.
-        </p>
-      </div>
-
-      <div class="permission-item">
-        <span class="permission-name">android.permission.ACCESS_NETWORK_STATE</span>
-        <p class="permission-desc">
-          <strong>Propósito técnico:</strong> Permite comprobar si el dispositivo móvil está conectado a una red activa antes de intentar enviar comandos al Smart TV, evitando errores innecesarios cuando no hay conectividad.
-        </p>
-      </div>
-
-      <div class="permission-item">
-        <span class="permission-name">android.permission.ACCESS_WIFI_STATE</span>
-        <p class="permission-desc">
-          <strong>Propósito técnico:</strong> Permite verificar si el adaptador Wi-Fi está encendido y obtener los parámetros de subred para inicializar el protocolo de descubrimiento de dispositivos en el hogar.
-        </p>
-      </div>
-
-      <div class="permission-item">
-        <span class="permission-name">android.permission.CHANGE_WIFI_MULTICAST_STATE</span>
-        <p class="permission-desc">
-          <strong>Propósito técnico:</strong> Requerido por el sistema Android para recibir paquetes Multicast (protocolo SSDP / mDNS bajo el servicio <code>_samsungms._tcp</code>). Esto permite el autodescubrimiento o descubrimiento automático de televisores Samsung Smart TV encendidos en la red Wi-Fi sin obligar al usuario a ingresar manualmente la dirección IP.
+    <!-- Sección 4: Modificaciones, Políticas de Cobro y Términos -->
+    <section class="section-card" id="terminos">
+      <h2>4. Modificaciones del Servicio, Políticas y Reserva de Precios</h2>
+      <p>
+        <strong>Zenlab Digital</strong> se reserva expresamente el derecho de:
+      </p>
+      <ul>
+        <li><strong>Actualización de Políticas y Funciones:</strong> Modificar, actualizar, complementar, suspender o discontinuar cualquier aspecto, característica o funcionalidad de la aplicación en cualquier momento.</li>
+        <li><strong>Políticas de Precios y Cobros:</strong> Reservarse el derecho de establecer, cambiar o introducir modelos de cobro, planes premium, compras integradas o tarifas de suscripción por el uso general de la aplicación o por determinadas características presentes o futuras.</li>
+        <li><strong>Notificación de Cambios:</strong> Cualquier modificación significativa en las condiciones o tarifas será comunicada con antelación a través de las notas de actualización en la tienda de aplicaciones o en este sitio web.</li>
+      </ul>
+      <div class="notice-box">
+        <p>
+          El uso continuo de <strong>Remote Family</strong> tras la publicación de cambios o actualizaciones constituye la aceptación plena de los términos y condiciones vigentes.
         </p>
       </div>
     </section>
 
-    <!-- Sección 4: Servicios de Terceros y Lanzadores de Streaming -->
+    <!-- Sección 5: Contacto Oficial -->
     <section class="section-card">
-      <h2>4. Servicios de Streaming y Marcas de Terceros</h2>
+      <h2>5. Contacto y Soporte</h2>
       <p>
-        Lunar Remote incluye accesos rápidos (lanzadores) para abrir aplicaciones de entretenimiento instaladas en el Smart TV (como YouTube, Netflix, Disney+ y Spotify):
+        Para consultas, inquietudes o cualquier tema relacionado con esta Política de Privacidad y la aplicación Remote Family, puedes ponerte en contacto con nosotros únicamente a través del correo oficial:
       </p>
-      <ul>
-        <li>La aplicación únicamente envía una instrucción de apertura de aplicación (App Launch ID) a través del protocolo WebSocket local del televisor.</li>
-        <li>Lunar Remote <strong>no</strong> tiene acceso a sus credenciales, contraseñas, perfiles, historial de reproducción ni suscripciones de dichos servicios.</li>
-        <li><strong>Descargo de responsabilidad de marcas comerciales:</strong> Samsung, YouTube, Netflix, Disney+, Spotify y cualquier otra marca o logotipo mencionado pertenecen a sus respectivos propietarios. Zenlab Digital y Lunar Remote son proyectos independientes sin afiliación, patrocinio ni relación comercial con dichas empresas.</li>
-      </ul>
+      <p style="margin-top: 1rem; font-size: 1.1rem;">
+        ✉️ <a href="mailto:info@zenlabdigital.com" class="contact-link">info@zenlabdigital.com</a>
+      </p>
     </section>
 
-    <!-- Sección 5: Seguridad y Derechos del Usuario -->
-    <section class="section-card">
-      <h2>5. Seguridad y Control del Usuario</h2>
-      <p>
-        Usted tiene el control total de los datos en su dispositivo:
-      </p>
-      <ul>
-        <li><strong>Eliminación de Datos:</strong> Puede borrar todos los tokens y televisores emparejados en cualquier momento desinstalando la aplicación o borrando los datos de la aplicación desde los ajustes de Android.</li>
-        <li><strong>Revocación en el TV:</strong> Puede revocar los permisos de Lunar Remote directamente desde el menú de administración de dispositivos de su Samsung Smart TV (<em>Ajustes → General → Administrador de dispositivos externos → Administrador de conexión de dispositivos</em>).</li>
-      </ul>
-    </section>
+    <!-- Bottom Return Banner -->
+    <div class="bottom-return-banner">
+      <h3>¿Listo para disfrutar de Remote Family?</h3>
+      <p>Regresa a la página principal para conocer todas las funciones disponibles para tu televisor.</p>
+      <a href="index.html" class="btn-back" style="padding: 0.75rem 1.75rem; font-size: 1rem;">
+        ← Volver a la Página de Inicio
+      </a>
+    </div>
 
-    <!-- Sección 6: Contacto y Soporte -->
-    <section class="section-card">
-      <h2>6. Contacto y Soporte Oficial</h2>
-      <p>
-        Si tiene dudas técnicas, consultas sobre esta Política de Privacidad o requiere asistencia con Lunar Remote, puede comunicarse con el equipo de desarrollo de <strong>Zenlab Digital</strong> a través de:
-      </p>
-      <ul>
-        <li><strong>Correo electrónico de soporte:</strong> <a href="mailto:contacto@zenlab.digital" class="contact-link">contacto@zenlab.digital</a></li>
-        <li><strong>Canal alternativo:</strong> <a href="mailto:soporte@zenlab.digital" class="contact-link">soporte@zenlab.digital</a></li>
-        <li><strong>Sitio Web:</strong> <a href="https://zenlab.digital" class="contact-link" target="_blank" rel="noopener noreferrer">https://zenlab.digital</a></li>
-      </ul>
-    </section>
   </main>
 
   <footer>
     <div class="footer-content">
-      <p>© 2026 Zenlab Digital. Todos los derechos reservados.</p>
-      <p>Lunar Remote (Samsung Family Remote) — Control Remoto Inteligente para el Hogar.</p>
+      <p>© 2026 <strong>Zenlab Digital</strong>. Todos los derechos reservados.</p>
+      <p>Remote Family — Control Inteligente para Smart TV.</p>
+      <p><a href="index.html" class="contact-link">Inicio</a> · <a href="mailto:info@zenlabdigital.com" class="contact-link">info@zenlabdigital.com</a></p>
     </div>
   </footer>
 
